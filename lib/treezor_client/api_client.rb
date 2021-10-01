@@ -264,7 +264,8 @@ module TreezorClient
     def build_request_url(path)
       # Add leading and trailing slashes to path
       path = "/#{path}".gsub(/\/+/, '/')
-      ERB::Util.url_encode(@config.base_url + path)
+      @config.base_url + path
+      # ERB::Util.url_encode(@config.base_url + path)
       # URI.encode(@config.base_url + path)
     end
 
