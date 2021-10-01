@@ -128,9 +128,9 @@ module TreezorClient
     attr_accessor :force_ending_format
 
     def initialize
-      @scheme = 'https'
-      @host = 'sandbox.treezor.com'
-      @base_path = '/v1/index.php'
+      @scheme = nil
+      @host = nil
+      @base_path = nil
       @api_key = {}
       @api_key_prefix = {}
       @timeout = 0
